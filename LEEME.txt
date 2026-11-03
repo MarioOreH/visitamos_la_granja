@@ -1,0 +1,25 @@
+VISITAMOS LA GRANJA — Diccionario digital interactivo
+====================================================================
+
+FLUJO:  PORTADA  →  VACA · PATO · CABRA · OVEJA · GRANJERO  →  JUEGO  →  FINAL
+
+CÓMO ABRIRLO
+  Abre index.html en el navegador (o sube la carpeta a cualquier hosting).
+  No necesita instalación.
+
+DÓNDE VA CADA ARCHIVO
+  assets/img/portada.jpg        Imagen de presentación (también vale .png / .webp / .jpeg)
+  assets/video/vaca.mp4    Video de la lección (4:3, ej. 960x720, sin audio)
+  assets/video/vaca_card.mp4    Video del juego (cuadrado, ej. 480x480, liviano)
+  ... lo mismo para: pato, cabra, oveja, granjero
+
+  Si falta la portada, se muestra una portada provisional.
+  Si falta el video de un tema, ese tema se omite automáticamente.
+
+CAMBIAR / AGREGAR TEMAS
+  Todo está en un solo lugar: la lista ITEMS al inicio de js/main.js
+  (nombre, emoji, color, frase, pregunta del juego y nombres de los videos).
+
+PREPARAR VIDEOS (opcional, requiere ffmpeg)
+  ./preparar_videos.sh mi_video.mov vaca
+  Genera vaca.mp4 (960x720) y vaca_card.mp4   (480x480), sin audio.
